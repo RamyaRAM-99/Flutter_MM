@@ -32,6 +32,9 @@ class _BottomNavbarScreenState extends State<BottomNavbarScreen> {
   List widgetScreens = [
     HomeScreen(),
     SearchScreen(),
+    Text('Underdevelopment : Screen play video goes here'),
+    Text('Underdevelopment : Screen Profile goes here')
+
 
   ];
 
@@ -47,26 +50,26 @@ class _BottomNavbarScreenState extends State<BottomNavbarScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.home, size: 30),
             label: 'Home',
-            backgroundColor: Colors.indigo,
+            backgroundColor: Color(0xFF282828),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.search, size: 30),
             label: 'Search',
-            backgroundColor: Colors.green,
+            backgroundColor: Color(0xFF282828),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.play_circle_outline, size: 30,),
             label: 'School',
-            backgroundColor: Colors.purple,
+            backgroundColor: Color(0xFF282828),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.account_circle, size: 30,),
             label: 'Settings',
-            backgroundColor: Colors.pink,
+            backgroundColor: Color(0xFF282828),
           ),
         ],
         currentIndex: selectedIndex,
-        selectedItemColor: Colors.grey[500],
+        selectedItemColor: Colors.white,
         onTap: onTapItem,
       ),
     );
